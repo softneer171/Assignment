@@ -1,0 +1,883 @@
+/* ---------------------- */
+/* GLOBAL BASE STYLES     */
+/* ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: white;
+}
+
+.container {
+    width: 85%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* ---------------------- */
+/* NAVIGATION BAR         */
+/* ---------------------- */
+.navbar {
+    background: #003B7A;
+    padding: 18px 0;
+    color: white;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo img {
+    height: 34px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn.login {
+    background: #F8D76B;
+    color: #000;
+}
+
+.btn.primary {
+    background: #2D8CFF;
+    color: white;
+}
+
+.btn.lg {
+    padding: 14px 26px;
+    margin-top: 25px;
+}
+
+/* ---------------------- */
+/* HERO SECTION           */
+/* ---------------------- */
+.hero {
+    background: #003B7A;
+    padding: 110px 0;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left {
+    max-width: 520px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-left p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d8e6f3;
+}
+
+.placeholder-box {
+    width: 520px;
+    height: 320px;
+    background: #BBD4F9;
+    border-radius: 6px;
+}
+/* ---------------------- */
+/* SECTION 2 — PROJECT MGMT */
+/* ---------------------- */
+
+.project-management {
+    background: #f8f9fb;
+    padding: 110px 0;
+}
+
+.pm-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pm-left h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.2;
+}
+
+.pm-left h2 span {
+    color: #003B7A;
+}
+
+.pm-left p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    max-width: 380px;
+}
+
+.placeholder-box.large {
+    width: 520px;
+    height: 330px;
+    background: #BBD4F9;
+    border-radius: 6px;
+}
+
+.btn.sm {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* ---------------------- */
+/* SECTION 2B — WORK TOGETHER */
+/* ---------------------- */
+
+.work-together {
+    background: #ffffff;
+    padding: 120px 0;
+}
+
+.work-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Circle graphic */
+.circle-graphic {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 2px dashed #cbd5e1;
+    position: relative;
+}
+
+.center-icon {
+    width: 70px;
+    height: 70px;
+    background: #003B7A;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dots around circle */
+.dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot.red { background: #FF6363; top: 10%; left: 50%; transform: translate(-50%); }
+.dot.yellow { background: #FFD447; top: 50%; right: -5%; transform: translateY(-50%); }
+.dot.green { background: #4CAF50; bottom: 10%; left: 50%; transform: translate(-50%); }
+.dot.blue { background: #0057FF; top: 50%; left: -5%; transform: translateY(-50%); }
+.dot.lightblue { background: #38BDF8; top: 22%; right: 22%; }
+
+.work-right h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111;
+}
+
+.work-right h2 span {
+    color: #003B7A;
+}
+
+.work-right p {
+    margin: 20px 0;
+    color: #333;
+    max-width: 420px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+/* ---------------------- */
+/* SECTION 3 — USE AS EXTENSION */
+/* ---------------------- */
+
+.use-extension {
+    background: #003B7A;
+    padding: 120px 0;
+    color: white;
+}
+
+.ue-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.use-extension h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.use-extension h2 span {
+    color: #F8D76B;
+}
+
+.use-extension p {
+    margin: 20px 0;
+    max-width: 420px;
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+/* ---------------------- */
+/* SECTION 3B — CUSTOMIZE IT */
+/* ---------------------- */
+
+.customise-needs {
+    background: white;
+    padding: 120px 0;
+}
+
+.cn-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customise-needs h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.customise-needs h2 span {
+    color: #003B7A;
+}
+
+.customise-needs p {
+    margin: 20px 0;
+    max-width: 420px;
+    line-height: 1.7;
+    color: #333;
+}
+/* ---------------------- */
+/* SECTION 4 — PRICING */
+/* ---------------------- */
+
+.pricing {
+    background: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111;
+}
+
+.pricing-title span {
+    color: #003B7A;
+}
+
+.pricing-subtitle {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.pricing-grid {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.price-card {
+    width: 310px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.price-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+
+.price-card .price {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #003B7A;
+    /* color:white; */
+}
+
+.price-card ul {
+    margin: 20px 0;
+    list-style: none;
+    line-height: 1.9;
+    color: #38BDF8;
+}
+
+.price-card ul li::before {
+    content: "✓ ";
+    color: #003B7A;
+}
+.price-card-featured .price ul{
+    color: white;
+}
+.btn.primary-outline {
+    background: white;
+    border: 2px solid #003B7A;
+    color: #003B7A;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.featured {
+    background: #003B7A;
+    color: white;
+    border: none;
+    transform: scale(1.05);
+}
+
+.featured h3,
+.featured .price,
+.featured ul li::before {
+    color: white;
+}
+
+.featured .btn.primary {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 0;
+}
+/* ---------------------- */
+/* SECTION 5 — WORK EVERYWHERE */
+/* ---------------------- */
+
+.work-everywhere {
+    background: #ffffff;
+    padding: 120px 0;
+}
+
+.we-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-everywhere h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111;
+}
+
+.work-everywhere h2 span {
+    color: #003B7A;
+}
+
+.work-everywhere p {
+    margin: 20px 0;
+    max-width: 420px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.placeholder-box.medium {
+    width: 480px;
+    height: 300px;
+    background: #BBD4F9;
+    border-radius: 6px;
+}
+
+
+/* ---------------------- */
+/* SECTION 5B — YOUR DATA */
+/* ---------------------- */
+
+.your-data {
+    background: #f8f9fb;
+    padding: 120px 0;
+}
+
+.yd-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.your-data h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111;
+}
+
+.your-data h2 span {
+    color: #003B7A;
+}
+
+.your-data p {
+    margin: 20px 0;
+    max-width: 420px;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+/* ---------------------- */
+/* SECTION 5C — SPONSORS */
+/* ---------------------- */
+
+.sponsors {
+    padding: 120px 0;
+    background: white;
+    text-align: center;
+}
+
+.sponsors h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111;
+}
+
+.sponsors h2 span {
+    color: #003B7A;
+}
+
+.sponsors-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around ;
+    gap: 40px;
+}
+
+.sponsor-box {
+    width: 100px;
+    height: 80px;
+    border-radius: 8px;
+    background: #eef1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-weight: 600;
+}
+.app-box-img2{
+    height:70px;
+    width:90px;
+}
+.sponsor-box img{
+     width: 100px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #eef1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------- */
+/* SECTION 6 — FAVORITE APPS */
+/* ---------------------- */
+
+.favorite-apps {
+    background: #f8f9fb;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.favorite-apps h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111;
+}
+
+.favorite-apps h2 span {
+    color: #003B7A;
+}
+
+.favorite-apps p {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.apps-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.app-box {
+    width: 100px;
+    height: 80px;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-weight: 600;
+}
+/* ---------------------- */
+/* SECTION 7 — TESTIMONIALS */
+/* ---------------------- */
+
+.testimonials {
+    background: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111;
+}
+
+.testimonials h2 span {
+    color: #003B7A;
+}
+
+.testimonial-grid {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 300px;
+    background: #f8f9fb;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.client-photo {
+    width: 70px;
+    height: 70px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .role {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .quote {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+}
+/* ---------------------- */
+/* SECTION 8A — FINAL CTA */
+/* ---------------------- */
+
+.final-cta {
+    background: #003B7A;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.final-cta h2 span {
+    color: #F8D76B;
+}
+
+.final-cta p {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.final-cta .btn.lg {
+    margin-top: 25px;
+}
+
+
+/* ---------------------- */
+/* SECTION 8B — FOOTER */
+/* ---------------------- */
+
+.footer {
+    background: #111;
+    color: #cbd5e1;
+    padding: 80px 0;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-logo img {
+    height: 34px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons .icon {
+    width: 32px;
+    height: 32px;
+    background: #2D8CFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.footer-copy {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #888;
+}
+/* =========================== */
+/* RESPONSIVE FOR MOBILE / TABLET */
+/* =========================== */
+
+@media (max-width: 768px) {
+
+  /* CONTAINERS: add horizontal padding and stack flex grids vertically */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* NAVIGATION */
+  nav ul, .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  nav ul li a, .footer-col ul li {
+    font-size: 14px;
+  }
+
+  /* HERO AND SECTION GRIDS: stack left/right vertically */
+  .hero-grid,
+  .ps-grid,
+  .we-grid,
+  .yd-grid,
+  .ue-grid,
+  .cn-grid,
+  .pricing-grid,
+  .testimonial-grid,
+  .sponsors-grid,
+  .apps-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Text blocks center-aligned on mobile */
+  .hero-left,
+  .ps-left,
+  .we-left,
+  .yd-right,
+  .ue-left,
+  .cn-right,
+  .final-cta .container,
+  .testimonials,
+  .favorite-apps,
+  .sponsors {
+    text-align: center;
+  }
+
+  /* Images and placeholder boxes scale responsively */
+  .placeholder-box.large,
+  .placeholder-box.medium {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+  }
+
+  /* Buttons full width */
+  .btn,
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Adjust font sizes */
+  h1, h2, h3 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  /* Pricing cards stack with margin */
+  .pricing-grid {
+    gap: 20px;
+  }
+
+  .price-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Testimonials stacked vertically */
+  .testimonial-grid {
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Sponsor logos stacked vertically or wrapped */
+  .sponsors-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sponsor-box {
+    width: 45%;
+    max-width: 180px;
+    margin: 10px auto;
+  }
+
+  /* Apps grid wrap with smaller boxes */
+  .apps-grid {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .app-box {
+    width: 45%;
+    max-width: 140px;
+
+  }
+
+  /* Footer links stacked */
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-copy {
+    margin-top: 40px;
+  }
+}
